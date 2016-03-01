@@ -1,5 +1,5 @@
 // dpunzel15@georgefox.edu
-// Person.java
+// Person
 // 2016-02-29
 
 /**
