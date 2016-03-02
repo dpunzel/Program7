@@ -44,9 +44,9 @@ public class PersonTest extends TestCase
         this.testSetPhone("555-555-5555");
     }
 
-    public void testSetEmail() throws Exception
+    public void testSetEmail(String emai) throws Exception
     {
-
+        this.testSetEmail("test@test.com");
     }
 
     public void testToString() throws Exception

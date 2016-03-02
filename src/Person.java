@@ -51,6 +51,7 @@ public class Person
     @Override
     public String toString()
     {
-        return super.toString();
+        String toString = "Name: " + _name + " ";
+        return toString;
     }
 }
