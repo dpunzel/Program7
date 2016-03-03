@@ -23,7 +23,7 @@ public class Employee extends Person
     @Override
     public String toString()
     {
-        return super.toString();
+        return super.toString() + "Employee ID: " +  _employeeID;
     }
 
 }
