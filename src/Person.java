@@ -1,5 +1,5 @@
 // dpunzel15@georgefox.edu
-// Person
+// Person.java
 // 2016-02-29
 
 /**
@@ -51,7 +51,6 @@ public class Person
     @Override
     public String toString()
     {
-        String toString = "Name: " + _name + " ";
-        return toString;
+        return super.toString();
     }
 }
