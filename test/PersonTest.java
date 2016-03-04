@@ -1,10 +1,12 @@
 import junit.framework.Assert;
 import junit.framework.TestCase;
+import org.junit.Before;
+import org.junit.Test;
 
 /**
  * Created by User on 2/27/2016.
  */
-public class PersonTest extends TestCase
+public class PersonTest// extends TestCase
 {
 
     public static final String EXPECTED_NAME = "Bob Smith";
@@ -12,12 +14,10 @@ public class PersonTest extends TestCase
     public static final String EXPECTED_EMAIL = "david@dad.com";
     public static final String EXPECTED_TOSTRING = "Name: " + EXPECTED_NAME + " ";
     
-    private Person _person1;
-    private Person _person2;
+    private Person _person1; //= new Person(EXPECTED_NAME, EXPECTED_PHONE, EXPECTED_EMAIL);
+    private Person _person2; // = new Person("", "", "");
     
-    /**
-     * @see http://junit.sourceforge.net/javadoc/org/junit/Before.html
-     */
+
     @Before
     public void initialize()
     {
@@ -25,14 +25,12 @@ public class PersonTest extends TestCase
         _person2 = new Person("", "", "");
     }
     
-    /**
-     * @see http://junit.sourceforge.net/javadoc/org/junit/Test.html
-     */
+
     @Test
     public void testConstructor() throws Exception
     {
-        Assert.assertNotNull(_person);
-        Assert.assertTrue(_person instanceof Person);
+        Assert.assertNotNull(_person1);
+        Assert.assertTrue(_person1 instanceof Person);
         this.testGetName();
         this.testGetPhone();
         this.testGetEmail();
